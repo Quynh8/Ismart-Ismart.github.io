@@ -1,0 +1,30 @@
+RewriteEngine On
+#link than thien cho gioi thieu 
+RewriteRule ^gioi-thieu.html$ index.php?mod=page&action=detail&id=2
+
+#link than thien cho blog
+RewriteRule ^bai-viet.html$ index.php?mod=post&action=index
+
+#link thanh thien cho chi tiet bai viet
+RewriteRule ^bai-viet/chi-tiet/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=post&action=detail&id=$2
+
+#link than thien cho gio hang
+RewriteRule ^gio-hang.html$ index.php?mod=cart
+RewriteRule ^thanh-toan.html$ index.php?mod=cart&action=checkout
+
+#link than thien cho danh muc san pham
+RewriteRule "^san-pham/danh-muc/([a-zA-Z0-9_-]+)-([0-9]+).html" "index.php?mod=product&action=index&type=product_cat&id=$2"
+
+RewriteRule "^san-pham/thuong-hieu/([a-zA-Z0-9_-]+)-([0-9]+).html" "index.php?mod=product&action=index&type=trademark_product&id=$2"
+
+#link than thien cho chi tiet san pham
+RewriteRule ^san-pham/chi-tiet/([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=product&action=detail&id=$2
+
+
+#link than thien cho trang checkout
+
+RewriteRule ^trang-chu.html$ index.php?mod=home&action=index
+
+
+
+
