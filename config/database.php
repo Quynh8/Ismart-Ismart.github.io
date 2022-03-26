@@ -17,9 +17,9 @@
 
 $db = array(
     'hostname' => 'localhost',
-    'username' => 'root',
+    'username' => 'Ismart-Ismart.github.io',
     'password' => '',
-    'database' => 'ismart.com',
+    'database' => 'ismart_com',
 );
 
 
